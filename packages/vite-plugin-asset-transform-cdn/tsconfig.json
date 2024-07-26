@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "declaration": true,
+    "declarationDir": "", // 声明文件输出的目录
+    "emitDeclarationOnly": true, // 只输出声明文件，不转译ts文件
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "lib": ["esnext", "DOM"],
+    "outDir": "",
+  },
+  "include": ["src/*.ts", "src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

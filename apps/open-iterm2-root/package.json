@@ -1,0 +1,95 @@
+{
+	"name": "open-iterm2-root",
+	"displayName": "Open iTerm2 Root",
+	"description": "open iterm2 with workbench rootDir for vscode.",
+	"version": "1.0.3",
+	"author": "Abunuo",
+	"publisher": "Abunuo",
+	"engines": {
+		"vscode": "^1.76.0"
+	},
+	"icon": "res/icon.png",
+	"keywords": [
+		"iterm2",
+		"open-iterm2"
+	],
+	"categories": [
+		"Other"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Abunuo/open-iterm2-root.git"
+	},
+	"activationEvents": [
+		"onCommand:extension.openITerm2",
+		"onCommand:extension.openITerm2Root"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.openITerm2",
+				"title": "Open iTerm2 Here"
+			},
+			{
+				"command": "extension.openITerm2Root",
+				"title": "Open iTerm2 Root"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.openITerm2"
+				},
+				{
+					"command": "extension.openITerm2Root"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "extension.openITerm2"
+				},
+				{
+					"command": "extension.openITerm2Root"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "extension.openITerm2"
+				},
+				{
+					"command": "extension.openITerm2Root"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "extension.openITerm2"
+				},
+				{
+					"command": "extension.openITerm2Root"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.76.0",
+		"@typescript-eslint/eslint-plugin": "^5.53.0",
+		"@typescript-eslint/parser": "^5.53.0",
+		"@vscode/test-electron": "^2.2.3",
+		"eslint": "^8.34.0",
+		"glob": "^11.0.0",
+		"mocha": "^10.2.0",
+		"typescript": "^4.9.5"
+	}
+}

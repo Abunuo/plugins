@@ -1,0 +1,26 @@
+{
+  "name": "plugins",
+  "author": "Abunuo",
+  "private": true,
+  "license": "Apache-2.0",
+  "keywords": [],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "turbo": "^2.0.9",
+    "typescript": "^5.5.4"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abunuo/plugins.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "create-abunuo-cli",
+  "version": "1.0.7",
+  "description": "使用 abunuo-cli 快速创建项目",
+  "author": "Abunuo",
+  "license": "MIT",
+  "bin": {
+    "abunuo-cli": "vite-creater.js"
+  },
+  "type": "module",
+  "main": "vite-create.js",
+  "scripts": {
+    "test": "abunuo-cli create"
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abunuo/abunuo-cli.git"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^9.2.23",
+    "kolorist": "^1.8.0"
+  }
+}
